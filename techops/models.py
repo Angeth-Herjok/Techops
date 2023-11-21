@@ -42,9 +42,11 @@ class Enrollment(models.Model):
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
     date_enrolled = models.DateField()
     
+
 class Assignment(models.Model):
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
-    file = models.FileField(upload-to=='assignment'/)
+    file = models.FileField(upload_to='assignment/')
+
     
 
 
